@@ -1,0 +1,561 @@
+const database = 'BD3-NoSQL-AtlasMongoDB';
+
+use(database);
+
+db['bd3-nosql-atv2'].insertMany (
+
+[
+    {
+      "cod_aluno": 1,
+      "cod_turma": 101,
+      "nome": "Ana Clara Silva",
+      "cpf": "12345678901",
+      "rg": "123456789",
+      "telefone_aluno": "11987654321",
+      "telefone_responsavel": "11912345678",
+      "email": "anaclara.silva@gmail.com",
+      "data_nascimento": "2005-07-15T00:00:00"
+    },
+    {
+      "cod_aluno": 2,
+      "cod_turma": 102,
+      "nome": "João Pedro Oliveira",
+      "cpf": "23456789012",
+      "rg": "234567890",
+      "telefone_aluno": "11923456789",
+      "telefone_responsavel": "11987654322",
+      "email": "joao.oliveira@etec.sp.gov.br",
+      "data_nascimento": "2006-03-22T00:00:00"
+    },
+    {
+      "cod_aluno": 3,
+      "cod_turma": 103,
+      "nome": "Maria Eduarda Santos",
+      "cpf": "34567890123",
+      "rg": "345678901",
+      "telefone_aluno": "11934567890",
+      "telefone_responsavel": "11956789012",
+      "email": "mariaeduarda.santos@al.educacao.sp",
+      "data_nascimento": "2005-11-30T00:00:00"
+    },
+    {
+      "cod_aluno": 4,
+      "cod_turma": 104,
+      "nome": "Luiz Felipe Rocha",
+      "cpf": "45678901234",
+      "rg": "456789012",
+      "telefone_aluno": "11945678901",
+      "telefone_responsavel": "11967890123",
+      "email": "luiz.rocha@gmail.com",
+      "data_nascimento": "2004-09-18T00:00:00"
+    },
+    {
+      "cod_aluno": 5,
+      "cod_turma": 105,
+      "nome": "Beatriz Costa",
+      "cpf": "56789012345",
+      "rg": "567890123",
+      "telefone_aluno": "11956789012",
+      "telefone_responsavel": "11978901234",
+      "email": "beatriz.costa@etec.sp.gov.br",
+      "data_nascimento": "2005-01-12T00:00:00"
+    },
+    {
+      "cod_aluno": 6,
+      "cod_turma": 106,
+      "nome": "Gabriel Almeida",
+      "cpf": "67890123456",
+      "rg": "678901234",
+      "telefone_aluno": "11967890123",
+      "telefone_responsavel": "11989012345",
+      "email": "gabriel.almeida@al.educacao.sp",
+      "data_nascimento": "2006-06-06T00:00:00"
+    },
+    {
+      "cod_aluno": 7,
+      "cod_turma": 107,
+      "nome": "Larissa Mendes",
+      "cpf": "78901234567",
+      "rg": "789012345",
+      "telefone_aluno": "11978901234",
+      "telefone_responsavel": "11990123456",
+      "email": "larissa.mendes@gmail.com",
+      "data_nascimento": "2004-02-25T00:00:00"
+    },
+    {
+      "cod_aluno": 8,
+      "cod_turma": 108,
+      "nome": "Carlos Eduardo Lima",
+      "cpf": "89012345678",
+      "rg": "890123456",
+      "telefone_aluno": "11989012345",
+      "telefone_responsavel": "11901234567",
+      "email": "carlos.lima@etec.sp.gov.br",
+      "data_nascimento": "2005-08-19T00:00:00"
+    },
+    {
+      "cod_aluno": 9,
+      "cod_turma": 109,
+      "nome": "Sophia Ferreira",
+      "cpf": "90123456789",
+      "rg": "901234567",
+      "telefone_aluno": "11990123456",
+      "telefone_responsavel": "11912345678",
+      "email": "sophia.ferreira@al.educacao.sp",
+      "data_nascimento": "2005-05-03T00:00:00"
+    },
+    {
+      "cod_aluno": 10,
+      "cod_turma": 110,
+      "nome": "Pedro Henrique Silva",
+      "cpf": "01234567890",
+      "rg": "012345678",
+      "telefone_aluno": "11901234567",
+      "telefone_responsavel": "11923456789",
+      "email": "pedro.silva@gmail.com",
+      "data_nascimento": "2006-12-15T00:00:00"
+    },
+    {
+      "cod_aluno": 11,
+      "cod_turma": 111,
+      "nome": "Fernanda Souza",
+      "cpf": "11234567890",
+      "rg": "112345678",
+      "telefone_aluno": "11911234567",
+      "telefone_responsavel": "11922334455",
+      "email": "fernanda.souza@gmail.com",
+      "data_nascimento": "2005-04-10T00:00:00"
+    },
+    {
+      "cod_aluno": 12,
+      "cod_turma": 112,
+      "nome": "Rafael Martins",
+      "cpf": "12234567890",
+      "rg": "122345678",
+      "telefone_aluno": "11922334455",
+      "telefone_responsavel": "11933445566",
+      "email": "rafael.martins@etec.sp.gov.br",
+      "data_nascimento": "2004-09-21T00:00:00"
+    },
+    {
+      "cod_aluno": 13,
+      "cod_turma": 113,
+      "nome": "Carolina Lima",
+      "cpf": "13234567890",
+      "rg": "132345678",
+      "telefone_aluno": "11933445566",
+      "telefone_responsavel": "11944556677",
+      "email": "carolina.lima@al.educacao.sp",
+      "data_nascimento": "2006-01-30T00:00:00"
+    },
+    {
+      "cod_aluno": 14,
+      "cod_turma": 114,
+      "nome": "Daniel Barbosa",
+      "cpf": "14234567890",
+      "rg": "142345678",
+      "telefone_aluno": "11944556677",
+      "telefone_responsavel": "11955667788",
+      "email": "daniel.barbosa@gmail.com",
+      "data_nascimento": "2004-07-18T00:00:00"
+    },
+    {
+      "cod_aluno": 15,
+      "cod_turma": 115,
+      "nome": "Letícia Azevedo",
+      "cpf": "15234567890",
+      "rg": "152345678",
+      "telefone_aluno": "11955667788",
+      "telefone_responsavel": "11966778899",
+      "email": "leticia.azevedo@etec.sp.gov.br",
+      "data_nascimento": "2005-05-25T00:00:00"
+    },
+    {
+      "cod_aluno": 16,
+      "cod_turma": 116,
+      "nome": "Bruno Fernandes",
+      "cpf": "16234567890",
+      "rg": "162345678",
+      "telefone_aluno": "11966778899",
+      "telefone_responsavel": "11977889900",
+      "email": "bruno.fernandes@al.educacao.sp",
+      "data_nascimento": "2006-02-11T00:00:00"
+    },
+    {
+      "cod_aluno": 17,
+      "cod_turma": 117,
+      "nome": "Isabela Ribeiro",
+      "cpf": "17234567890",
+      "rg": "172345678",
+      "telefone_aluno": "11977889900",
+      "telefone_responsavel": "11988990011",
+      "email": "isabela.ribeiro@gmail.com",
+      "data_nascimento": "2005-03-03T00:00:00"
+    },
+    {
+      "cod_aluno": 18,
+      "cod_turma": 118,
+      "nome": "Thiago Correia",
+      "cpf": "18234567890",
+      "rg": "182345678",
+      "telefone_aluno": "11988990011",
+      "telefone_responsavel": "11999001122",
+      "email": "thiago.correia@etec.sp.gov.br",
+      "data_nascimento": "2004-06-14T00:00:00"
+    },
+    {
+      "cod_aluno": 19,
+      "cod_turma": 119,
+      "nome": "Mariana Farias",
+      "cpf": "19234567890",
+      "rg": "192345678",
+      "telefone_aluno": "11999001122",
+      "telefone_responsavel": "11900112233",
+      "email": "mariana.farias@al.educacao.sp",
+      "data_nascimento": "2005-08-22T00:00:00"
+    },
+    {
+      "cod_aluno": 20,
+      "cod_turma": 120,
+      "nome": "Gustavo Silva",
+      "cpf": "20234567890",
+      "rg": "202345678",
+      "telefone_aluno": "11900112233",
+      "telefone_responsavel": "11911223344",
+      "email": "gustavo.silva@gmail.com",
+      "data_nascimento": "2006-09-09T00:00:00"
+    },
+    {
+        "cod_aluno": 21,
+        "cod_turma": 121,
+        "nome": "Amanda Cardoso",
+        "cpf": "21234567890",
+        "rg": "212345678",
+        "telefone_aluno": "11921234567",
+        "telefone_responsavel": "11932345566",
+        "email": "amanda.cardoso@gmail.com",
+        "data_nascimento": "2005-07-07T00:00:00"
+      },
+      {
+        "cod_aluno": 22,
+        "cod_turma": 122,
+        "nome": "Rodrigo Pereira",
+        "cpf": "22234567890",
+        "rg": "222345678",
+        "telefone_aluno": "11932345566",
+        "telefone_responsavel": "11943456677",
+        "email": "rodrigo.pereira@etec.sp.gov.br",
+        "data_nascimento": "2004-04-18T00:00:00"
+      },
+      {
+        "cod_aluno": 23,
+        "cod_turma": 123,
+        "nome": "Camila Moreira",
+        "cpf": "23234567890",
+        "rg": "232345678",
+        "telefone_aluno": "11943456677",
+        "telefone_responsavel": "11954567788",
+        "email": "camila.moreira@al.educacao.sp",
+        "data_nascimento": "2006-03-14T00:00:00"
+      },
+      {
+        "cod_aluno": 24,
+        "cod_turma": 124,
+        "nome": "Eduardo Santos",
+        "cpf": "24234567890",
+        "rg": "242345678",
+        "telefone_aluno": "11954567788",
+        "telefone_responsavel": "11965678899",
+        "email": "eduardo.santos@gmail.com",
+        "data_nascimento": "2005-08-09T00:00:00"
+      },
+      {
+        "cod_aluno": 25,
+        "cod_turma": 125,
+        "nome": "Vanessa Oliveira",
+        "cpf": "25234567890",
+        "rg": "252345678",
+        "telefone_aluno": "11965678899",
+        "telefone_responsavel": "11976789900",
+        "email": "vanessa.oliveira@etec.sp.gov.br",
+        "data_nascimento": "2004-05-20T00:00:00"
+      },
+      {
+        "cod_aluno": 26,
+        "cod_turma": 126,
+        "nome": "Lucas Ribeiro",
+        "cpf": "26234567890",
+        "rg": "262345678",
+        "telefone_aluno": "11976789900",
+        "telefone_responsavel": "11987890011",
+        "email": "lucas.ribeiro@al.educacao.sp",
+        "data_nascimento": "2006-11-11T00:00:00"
+      },
+      {
+        "cod_aluno": 27,
+        "cod_turma": 127,
+        "nome": "Juliana Silva",
+        "cpf": "27234567890",
+        "rg": "272345678",
+        "telefone_aluno": "11987890011",
+        "telefone_responsavel": "11998900122",
+        "email": "juliana.silva@gmail.com",
+        "data_nascimento": "2005-10-25T00:00:00"
+      },
+      {
+        "cod_aluno": 28,
+        "cod_turma": 128,
+        "nome": "Fábio Almeida",
+        "cpf": "28234567890",
+        "rg": "282345678",
+        "telefone_aluno": "11998900122",
+        "telefone_responsavel": "11909011233",
+        "email": "fabio.almeida@etec.sp.gov.br",
+        "data_nascimento": "2004-06-02T00:00:00"
+      },
+      {
+        "cod_aluno": 29,
+        "cod_turma": 129,
+        "nome": "Carla Rocha",
+        "cpf": "29234567890",
+        "rg": "292345678",
+        "telefone_aluno": "11909011233",
+        "telefone_responsavel": "11920112344",
+        "email": "carla.rocha@al.educacao.sp",
+        "data_nascimento": "2005-01-15T00:00:00"
+      },
+      {
+        "cod_aluno": 30,
+        "cod_turma": 130,
+        "nome": "Renato Lima",
+        "cpf": "30234567890",
+        "rg": "302345678",
+        "telefone_aluno": "11920112344",
+        "telefone_responsavel": "11931234555",
+        "email": "renato.lima@gmail.com",
+        "data_nascimento": "2006-09-22T00:00:00"
+      },
+      {
+        "cod_aluno": 31,
+        "cod_turma": 131,
+        "nome": "Patrícia Nunes",
+        "cpf": "31234567890",
+        "rg": "312345678",
+        "telefone_aluno": "11931234567",
+        "telefone_responsavel": "11942345678",
+        "email": "patricia.nunes@gmail.com",
+        "data_nascimento": "2005-07-12T00:00:00"
+      },
+      {
+        "cod_aluno": 32,
+        "cod_turma": 132,
+        "nome": "Henrique Costa",
+        "cpf": "32234567890",
+        "rg": "322345678",
+        "telefone_aluno": "11942345678",
+        "telefone_responsavel": "11953456789",
+        "email": "henrique.costa@etec.sp.gov.br",
+        "data_nascimento": "2004-04-28T00:00:00"
+      },
+      {
+        "cod_aluno": 33,
+        "cod_turma": 133,
+        "nome": "Caroline Rezende",
+        "cpf": "33234567890",
+        "rg": "332345678",
+        "telefone_aluno": "11953456789",
+        "telefone_responsavel": "11964567890",
+        "email": "caroline.rezende@al.educacao.sp",
+        "data_nascimento": "2006-03-19T00:00:00"
+      },
+      {
+        "cod_aluno": 34,
+        "cod_turma": 134,
+        "nome": "Felipe Oliveira",
+        "cpf": "34234567890",
+        "rg": "342345678",
+        "telefone_aluno": "11964567890",
+        "telefone_responsavel": "11975678901",
+        "email": "felipe.oliveira@gmail.com",
+        "data_nascimento": "2005-10-21T00:00:00"
+      },
+      {
+        "cod_aluno": 35,
+        "cod_turma": 135,
+        "nome": "Aline Cardoso",
+        "cpf": "35234567890",
+        "rg": "352345678",
+        "telefone_aluno": "11975678901",
+        "telefone_responsavel": "11986789012",
+        "email": "aline.cardoso@etec.sp.gov.br",
+        "data_nascimento": "2004-06-05T00:00:00"
+      },
+      {
+        "cod_aluno": 36,
+        "cod_turma": 136,
+        "nome": "Ricardo Lima",
+        "cpf": "36234567890",
+        "rg": "362345678",
+        "telefone_aluno": "11986789012",
+        "telefone_responsavel": "11997890123",
+        "email": "ricardo.lima@al.educacao.sp",
+        "data_nascimento": "2006-11-03T00:00:00"
+      },
+      {
+        "cod_aluno": 37,
+        "cod_turma": 137,
+        "nome": "Luciana Mendes",
+        "cpf": "37234567890",
+        "rg": "372345678",
+        "telefone_aluno": "11997890123",
+        "telefone_responsavel": "11908901234",
+        "email": "luciana.mendes@gmail.com",
+        "data_nascimento": "2005-12-11T00:00:00"
+      },
+      {
+        "cod_aluno": 38,
+        "cod_turma": 138,
+        "nome": "André Souza",
+        "cpf": "38234567890",
+        "rg": "382345678",
+        "telefone_aluno": "11908901234",
+        "telefone_responsavel": "11919012345",
+        "email": "andre.souza@etec.sp.gov.br",
+        "data_nascimento": "2004-08-06T00:00:00"
+      },
+      {
+        "cod_aluno": 39,
+        "cod_turma": 139,
+        "nome": "Fabiana Rocha",
+        "cpf": "39234567890",
+        "rg": "392345678",
+        "telefone_aluno": "11919012345",
+        "telefone_responsavel": "11920123456",
+        "email": "fabiana.rocha@al.educacao.sp",
+        "data_nascimento": "2005-02-08T00:00:00"
+      },
+      {
+        "cod_aluno": 40,
+        "cod_turma": 140,
+        "nome": "Marcelo Santos",
+        "cpf": "40234567890",
+        "rg": "402345678",
+        "telefone_aluno": "11920123456",
+        "telefone_responsavel": "11931234567",
+        "email": "marcelo.santos@gmail.com",
+        "data_nascimento": "2006-09-15T00:00:00"
+      },
+      {
+        "cod_aluno": 41,
+        "cod_turma": 141,
+        "nome": "Júlia Carvalho",
+        "cpf": "41234567890",
+        "rg": "412345678",
+        "telefone_aluno": "11941234567",
+        "telefone_responsavel": "11952345678",
+        "email": "julia.carvalho@gmail.com",
+        "data_nascimento": "2005-03-14T00:00:00"
+      },
+      {
+        "cod_aluno": 42,
+        "cod_turma": 142,
+        "nome": "Fernando Batista",
+        "cpf": "42234567890",
+        "rg": "422345678",
+        "telefone_aluno": "11952345678",
+        "telefone_responsavel": "11963456789",
+        "email": "fernando.batista@etec.sp.gov.br",
+        "data_nascimento": "2004-08-26T00:00:00"
+      },
+      {
+        "cod_aluno": 43,
+        "cod_turma": 143,
+        "nome": "Larissa Monteiro",
+        "cpf": "43234567890",
+        "rg": "432345678",
+        "telefone_aluno": "11963456789",
+        "telefone_responsavel": "11974567890",
+        "email": "larissa.monteiro@al.educacao.sp",
+        "data_nascimento": "2006-11-18T00:00:00"
+      },
+      {
+        "cod_aluno": 44,
+        "cod_turma": 144,
+        "nome": "Rafael Albuquerque",
+        "cpf": "44234567890",
+        "rg": "442345678",
+        "telefone_aluno": "11974567890",
+        "telefone_responsavel": "11985678901",
+        "email": "rafael.albuquerque@gmail.com",
+        "data_nascimento": "2005-12-24T00:00:00"
+      },
+      {
+        "cod_aluno": 45,
+        "cod_turma": 145,
+        "nome": "Natália Vieira",
+        "cpf": "45234567890",
+        "rg": "452345678",
+        "telefone_aluno": "11985678901",
+        "telefone_responsavel": "11996789012",
+        "email": "natalia.vieira@etec.sp.gov.br",
+        "data_nascimento": "2004-10-10T00:00:00"
+      },
+      {
+        "cod_aluno": 46,
+        "cod_turma": 146,
+        "nome": "Gustavo Freitas",
+        "cpf": "46234567890",
+        "rg": "462345678",
+        "telefone_aluno": "11996789012",
+        "telefone_responsavel": "11907890123",
+        "email": "gustavo.freitas@al.educacao.sp",
+        "data_nascimento": "2006-02-14T00:00:00"
+      },
+      {
+        "cod_aluno": 47,
+        "cod_turma": 147,
+        "nome": "Bruna Fernandes",
+        "cpf": "47234567890",
+        "rg": "472345678",
+        "telefone_aluno": "11907890123",
+        "telefone_responsavel": "11918901234",
+        "email": "bruna.fernandes@gmail.com",
+        "data_nascimento": "2005-05-09T00:00:00"
+      },
+      {
+        "cod_aluno": 48,
+        "cod_turma": 148,
+        "nome": "Felipe Andrade",
+        "cpf": "48234567890",
+        "rg": "482345678",
+        "telefone_aluno": "11918901234",
+        "telefone_responsavel": "11929012345",
+        "email": "felipe.andrade@etec.sp.gov.br",
+        "data_nascimento": "2004-12-19T00:00:00"
+      },
+      {
+        "cod_aluno": 49,
+        "cod_turma": 149,
+        "nome": "Cláudia Araújo",
+        "cpf": "49234567890",
+        "rg": "492345678",
+        "telefone_aluno": "11929012345",
+        "telefone_responsavel": "11930123456",
+        "email": "claudia.araujo@al.educacao.sp",
+        "data_nascimento": "2005-06-22T00:00:00"
+      },
+      {
+        "cod_aluno": 50,
+        "cod_turma": 150,
+        "nome": "Diego Costa",
+        "cpf": "50234567890",
+        "rg": "502345678",
+        "telefone_aluno": "11930123456",
+        "telefone_responsavel": "11941234567",
+        "email": "diego.costa@gmail.com",
+        "data_nascimento": "2006-09-30T00:00:00"
+      },
+      
+     ]
+
+  )
